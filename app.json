@@ -4,7 +4,7 @@
     "slug": "hoho-app",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
+    "icon": "./assets/images/splash-icon.png",
     "scheme": "myapp",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
@@ -14,26 +14,37 @@
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
-      }
+        "backgroundColor": "#E3F2FD"
+      },
+      "package": "com.anonymous.hohoapp"
     },
     "web": {
       "bundler": "metro",
       "output": "static",
-      "favicon": "./assets/images/favicon.png"
+      "favicon": "./assets/images/favicon.png",
+      "themeColor": "#007BFF",
+      "backgroundColor": "#F5F5F5"
     },
     "plugins": [
-      "expo-router",
       [
         "expo-splash-screen",
         {
+          "backgroundColor": "#E3F2FD",
           "image": "./assets/images/splash-icon.png",
-          "imageWidth": 200,
+          "imageWidth": 250,
           "resizeMode": "contain",
-          "backgroundColor": "#ffffff"
+          "dark": {
+            "image": "./assets/images/splash-icon.png",
+            "backgroundColor": "#E3F2FD"
+          }
         }
       ]
     ],
+    "splash": {
+      "image": "./assets/images/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#E3F2FD"
+    },
     "experiments": {
       "typedRoutes": true
     }
