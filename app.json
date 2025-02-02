@@ -38,7 +38,8 @@
             "backgroundColor": "#E3F2FD"
           }
         }
-      ]
+      ],
+      "react-native-edge-to-edge"
     ],
     "splash": {
       "image": "./assets/images/splash-icon.png",
